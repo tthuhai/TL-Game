@@ -78,18 +78,9 @@ body.kiosk { padding: 0; }
 .res-again { position: absolute; left: 60px; bottom: 96px; display: grid; gap: 14px; }
 .res-again .go { font-size: 96px; line-height: .86; }
 
-/* ── QR (LED video only) ─────────────── */
-.qr { display: block; background: #fff; }
-.qr-cta { position: absolute; right: 60px; bottom: 70px; display: grid; justify-items: end; gap: 12px; }
-.qr-cta img { width: 300px; height: 300px; }
-#qrCorner { position: absolute; left: 60px; bottom: 60px; display: grid; gap: 10px; transition: opacity .5s var(--snap), transform .6s var(--pop); }
-#qrCorner[data-off] { opacity: 0; transform: translateY(40px) scale(.9); }
-#qrCorner img { width: 230px; height: 230px; }
-#qrCorner span { font-size: 44px; }
 #outro { background: var(--bg); }
-.out-card { position: absolute; left: 60px; right: 60px; top: 120px; display: grid; gap: 50px; }
+.out-card { position: absolute; left: 60px; right: 60px; top: 380px; display: grid; gap: 50px; }
 .out-q { margin: 0; font-size: 210px; line-height: .8; font-weight: 700; letter-spacing: -.01em; }
-.out-qr { width: 600px; height: 600px; }
 .out-cta { font-size: 120px; line-height: .86; transform-origin: 0 80%; animation: bob 1.3s var(--pop) infinite; display: inline-block; justify-self: start; }
 body:not(.video) .video-only { display: none !important; }
 body.video .time-block { visibility: hidden; }
@@ -124,15 +115,11 @@ body.video .time-block { visibility: hidden; }
         <div class="att-sub num">60s · Goal 300.000</div>
       </div>
       <div class="att-cta"><span class="go" id="ctaText">Tap To Play</span></div>
-      <div class="qr-cta video-only"><img class="qr" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOTAiIGhlaWdodD0iMjkwIiBjbGFzcz0ic2Vnbm8iPjxnIHRyYW5zZm9ybT0ic2NhbGUoMTApIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDI5djI5aC0yOXoiLz48cGF0aCBjbGFzcz0icXJsaW5lIiBzdHJva2U9IiMwMDY1ZmUiIGQ9Ik0yIDIuNWg3bTQgMGg0bTMgMGg3bS0yNSAxaDFtNSAwaDFtMSAwaDJtMSAwaDFtMiAwaDFtMyAwaDFtNSAwaDFtLTI1IDFoMW0xIDBoM20xIDBoMW0xIDBoMm0xIDBoMW0yIDBoMW0xIDBoMW0xIDBoMW0xIDBoM20xIDBoMW0tMjUgMWgxbTEgMGgzbTEgMGgxbTEgMGgzbTIgMGgxbTQgMGgxbTEgMGgzbTEgMGgxbS0yNSAxaDFtMSAwaDNtMSAwaDFtNCAwaDFtMiAwaDFtMSAwaDFtMSAwaDFtMSAwaDNtMSAwaDFtLTI1IDFoMW01IDBoMW0yIDBoMm0xIDBoMm00IDBoMW01IDBoMW0tMjUgMWg3bTEgMGgxbTEgMGgxbTEgMGgxbTEgMGgxbTEgMGgxbTEgMGg3bS0xNyAxaDFtMyAwaDFtMiAwaDJtLTE3IDFoMW01IDBoMW0xIDBoMW0yIDBoMW0xIDBoMm0yIDBoMm0yIDBoM20tMjQgMWgybTUgMGgxbTIgMGgxbTMgMGgzbTIgMGg1bS0yMyAxaDNtMiAwaDFtMyAwaDFtMSAwaDJtMSAwaDNtMyAwaDFtMSAwaDJtLTE3IDFoMW0yIDBoMW0yIDBoMW0xIDBoMW0xIDBoMm0xIDBoMW0yIDBoMW0tMjQgMWgzbTIgMGgzbTEgMGgxbTEgMGgxbTIgMGg0bTUgMGgxbS0yNSAxaDJtMiAwaDFtMyAwaDFtMyAwaDFtMiAwaDJtMiAwaDFtMyAwaDFtLTI0IDFoMW0yIDBoNG0xIDBoMm0yIDBoMW0xIDBoNG0xIDBoM20xIDBoMm0tMjUgMWgxbTEgMGgybTEgMGgxbTYgMGgxbTQgMGgzbTEgMGgybTEgMGgxbS0yNSAxaDFtMSAwaDFtMSAwaDFtMSAwaDJtMSAwaDJtMiAwaDJtMSAwaDVtMSAwaDFtLTE1IDFoMW0xIDBoMm0xIDBoMW0yIDBoMW0zIDBoMW0tMjEgMWg3bTIgMGgxbTEgMGgzbTIgMGgxbTEgMGgxbTEgMGgxbTMgMGgxbS0yNSAxaDFtNSAwaDFtMiAwaDFtMiAwaDFtMiAwaDJtMyAwaDFtLTIxIDFoMW0xIDBoM20xIDBoMW0yIDBoMW0zIDBoMW0xIDBoNm0xIDBoMW0tMjMgMWgxbTEgMGgzbTEgMGgxbTIgMGgzbTEgMGg2bTQgMGgybS0yNSAxaDFtMSAwaDNtMSAwaDFtMiAwaDJtMiAwaDNtNSAwaDJtMSAwaDFtLTI1IDFoMW01IDBoMW0yIDBoMW0yIDBoMW0zIDBoNW0zIDBoMW0tMjUgMWg3bTEgMGgxbTEgMGgzbTMgMGgxbTQgMGgxbTIgMGgxIi8+PC9nPjwvc3ZnPgo=" alt="QR code to play on your phone"></div>
     </section>
-
-    <div id="qrCorner" class="video-only" data-off><img class="qr" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOTAiIGhlaWdodD0iMjkwIiBjbGFzcz0ic2Vnbm8iPjxnIHRyYW5zZm9ybT0ic2NhbGUoMTApIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDI5djI5aC0yOXoiLz48cGF0aCBjbGFzcz0icXJsaW5lIiBzdHJva2U9IiMwMDY1ZmUiIGQ9Ik0yIDIuNWg3bTQgMGg0bTMgMGg3bS0yNSAxaDFtNSAwaDFtMSAwaDJtMSAwaDFtMiAwaDFtMyAwaDFtNSAwaDFtLTI1IDFoMW0xIDBoM20xIDBoMW0xIDBoMm0xIDBoMW0yIDBoMW0xIDBoMW0xIDBoMW0xIDBoM20xIDBoMW0tMjUgMWgxbTEgMGgzbTEgMGgxbTEgMGgzbTIgMGgxbTQgMGgxbTEgMGgzbTEgMGgxbS0yNSAxaDFtMSAwaDNtMSAwaDFtNCAwaDFtMiAwaDFtMSAwaDFtMSAwaDFtMSAwaDNtMSAwaDFtLTI1IDFoMW01IDBoMW0yIDBoMm0xIDBoMm00IDBoMW01IDBoMW0tMjUgMWg3bTEgMGgxbTEgMGgxbTEgMGgxbTEgMGgxbTEgMGgxbTEgMGg3bS0xNyAxaDFtMyAwaDFtMiAwaDJtLTE3IDFoMW01IDBoMW0xIDBoMW0yIDBoMW0xIDBoMm0yIDBoMm0yIDBoM20tMjQgMWgybTUgMGgxbTIgMGgxbTMgMGgzbTIgMGg1bS0yMyAxaDNtMiAwaDFtMyAwaDFtMSAwaDJtMSAwaDNtMyAwaDFtMSAwaDJtLTE3IDFoMW0yIDBoMW0yIDBoMW0xIDBoMW0xIDBoMm0xIDBoMW0yIDBoMW0tMjQgMWgzbTIgMGgzbTEgMGgxbTEgMGgxbTIgMGg0bTUgMGgxbS0yNSAxaDJtMiAwaDFtMyAwaDFtMyAwaDFtMiAwaDJtMiAwaDFtMyAwaDFtLTI0IDFoMW0yIDBoNG0xIDBoMm0yIDBoMW0xIDBoNG0xIDBoM20xIDBoMm0tMjUgMWgxbTEgMGgybTEgMGgxbTYgMGgxbTQgMGgzbTEgMGgybTEgMGgxbS0yNSAxaDFtMSAwaDFtMSAwaDFtMSAwaDJtMSAwaDJtMiAwaDJtMSAwaDVtMSAwaDFtLTE1IDFoMW0xIDBoMm0xIDBoMW0yIDBoMW0zIDBoMW0tMjEgMWg3bTIgMGgxbTEgMGgzbTIgMGgxbTEgMGgxbTEgMGgxbTMgMGgxbS0yNSAxaDFtNSAwaDFtMiAwaDFtMiAwaDFtMiAwaDJtMyAwaDFtLTIxIDFoMW0xIDBoM20xIDBoMW0yIDBoMW0zIDBoMW0xIDBoNm0xIDBoMW0tMjMgMWgxbTEgMGgzbTEgMGgxbTIgMGgzbTEgMGg2bTQgMGgybS0yNSAxaDFtMSAwaDNtMSAwaDFtMiAwaDJtMiAwaDNtNSAwaDJtMSAwaDFtLTI1IDFoMW01IDBoMW0yIDBoMW0yIDBoMW0zIDBoNW0zIDBoMW0tMjUgMWg3bTEgMGgxbTEgMGgzbTMgMGgxbTQgMGgxbTIgMGgxIi8+PC9nPjwvc3ZnPgo=" alt="QR code to play on your phone"><span>Scan To Play</span></div>
 
     <section class="screen video-only" id="outro" data-off>
       <div class="out-card">
         <h2 class="out-q">Can You<br>Hit 300.000?</h2>
-        <img class="qr out-qr" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOTAiIGhlaWdodD0iMjkwIiBjbGFzcz0ic2Vnbm8iPjxnIHRyYW5zZm9ybT0ic2NhbGUoMTApIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDI5djI5aC0yOXoiLz48cGF0aCBjbGFzcz0icXJsaW5lIiBzdHJva2U9IiMwMDY1ZmUiIGQ9Ik0yIDIuNWg3bTQgMGg0bTMgMGg3bS0yNSAxaDFtNSAwaDFtMSAwaDJtMSAwaDFtMiAwaDFtMyAwaDFtNSAwaDFtLTI1IDFoMW0xIDBoM20xIDBoMW0xIDBoMm0xIDBoMW0yIDBoMW0xIDBoMW0xIDBoMW0xIDBoM20xIDBoMW0tMjUgMWgxbTEgMGgzbTEgMGgxbTEgMGgzbTIgMGgxbTQgMGgxbTEgMGgzbTEgMGgxbS0yNSAxaDFtMSAwaDNtMSAwaDFtNCAwaDFtMiAwaDFtMSAwaDFtMSAwaDFtMSAwaDNtMSAwaDFtLTI1IDFoMW01IDBoMW0yIDBoMm0xIDBoMm00IDBoMW01IDBoMW0tMjUgMWg3bTEgMGgxbTEgMGgxbTEgMGgxbTEgMGgxbTEgMGgxbTEgMGg3bS0xNyAxaDFtMyAwaDFtMiAwaDJtLTE3IDFoMW01IDBoMW0xIDBoMW0yIDBoMW0xIDBoMm0yIDBoMm0yIDBoM20tMjQgMWgybTUgMGgxbTIgMGgxbTMgMGgzbTIgMGg1bS0yMyAxaDNtMiAwaDFtMyAwaDFtMSAwaDJtMSAwaDNtMyAwaDFtMSAwaDJtLTE3IDFoMW0yIDBoMW0yIDBoMW0xIDBoMW0xIDBoMm0xIDBoMW0yIDBoMW0tMjQgMWgzbTIgMGgzbTEgMGgxbTEgMGgxbTIgMGg0bTUgMGgxbS0yNSAxaDJtMiAwaDFtMyAwaDFtMyAwaDFtMiAwaDJtMiAwaDFtMyAwaDFtLTI0IDFoMW0yIDBoNG0xIDBoMm0yIDBoMW0xIDBoNG0xIDBoM20xIDBoMm0tMjUgMWgxbTEgMGgybTEgMGgxbTYgMGgxbTQgMGgzbTEgMGgybTEgMGgxbS0yNSAxaDFtMSAwaDFtMSAwaDFtMSAwaDJtMSAwaDJtMiAwaDJtMSAwaDVtMSAwaDFtLTE1IDFoMW0xIDBoMm0xIDBoMW0yIDBoMW0zIDBoMW0tMjEgMWg3bTIgMGgxbTEgMGgzbTIgMGgxbTEgMGgxbTEgMGgxbTMgMGgxbS0yNSAxaDFtNSAwaDFtMiAwaDFtMiAwaDFtMiAwaDJtMyAwaDFtLTIxIDFoMW0xIDBoM20xIDBoMW0yIDBoMW0zIDBoMW0xIDBoNm0xIDBoMW0tMjMgMWgxbTEgMGgzbTEgMGgxbTIgMGgzbTEgMGg2bTQgMGgybS0yNSAxaDFtMSAwaDNtMSAwaDFtMiAwaDJtMiAwaDNtNSAwaDJtMSAwaDFtLTI1IDFoMW01IDBoMW0yIDBoMW0yIDBoMW0zIDBoNW0zIDBoMW0tMjUgMWg3bTEgMGgxbTEgMGgzbTMgMGgxbTQgMGgxbTIgMGgxIi8+PC9nPjwvc3ZnPgo=" alt="QR code to play on your phone">
         <span class="out-cta">Scan To Play</span>
       </div>
     </section>
@@ -476,7 +463,7 @@ function demoThink(now) {
   }
 }
 
-// ── LED video director: title → self-playing round → "Can you hit it?" + QR ──
+// ── LED video director: title → self-playing round → "Can you hit it?" ──
 const DIR = { t0: 0, phase: 'intro' };
 function director(now) {
   if (!DIR.t0) DIR.t0 = now;
@@ -484,13 +471,12 @@ function director(now) {
   if (DIR.phase === 'intro' && t >= 4) {
     DIR.phase = 'play';
     startGame(); S.demoNext = now + 300;
-    show(document.getElementById('qrCorner'), true);
   } else if (DIR.phase === 'play' && t >= 25.5) {
     DIR.phase = 'outro';
     S.mode = 'over'; S.hanging = null; hideHand();
-    show(elHud, false); show(document.getElementById('qrCorner'), false);
+    show(elHud, false);
     const o = document.getElementById('outro'); show(o, true);
-    staggerIn([o.querySelector('.out-q'), o.querySelector('.out-qr'), o.querySelector('.out-cta')], 'translateY(120px) skewX(-10deg)');
+    staggerIn([o.querySelector('.out-q'), o.querySelector('.out-cta')], 'translateY(120px) skewX(-10deg)');
   }
 }
 
