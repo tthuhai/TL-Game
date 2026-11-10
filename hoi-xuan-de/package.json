@@ -1,0 +1,11 @@
+{
+  "name": "hoi-xuan-de",
+  "private": true,
+  "scripts": {
+    "build": "esbuild shim.js --bundle --format=iife --minify --target=es2020 --outfile=public/net.js && cp index.html public/index.html"
+  },
+  "dependencies": {
+    "esbuild": "0.24.0",
+    "trystero": "0.25.4"
+  }
+}
